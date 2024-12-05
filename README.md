@@ -143,7 +143,7 @@ pay/
 
 ### Database Deployment
 
-- Use [Neon](https://neon.tech) for PostgreSQL
+- Use PostgreSQL (We recommend [Neon](https://neon.tech), or any other cloud provider with PostgreSQL support)
 - Enable serverless pooling
 - Configure connection pooling
 
