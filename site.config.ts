@@ -1,0 +1,13 @@
+type PayConfig = {
+  name: string
+  title: string
+  desc: string
+  url: string
+}
+
+export const pay: PayConfig = {
+  name: 'PayloadCMS Starter by 9d8',
+  title: 'Payload CMS / Next.js Starter by 9d8',
+  desc: 'This is the PayloadCMS Starter by 9d8. It uses Next.js, Typescript, Postgres, Tailwind, shadcn/ui, brijr/craft, and Amazon S3.',
+  url: 'https://pay.9d8.dev',
+}
