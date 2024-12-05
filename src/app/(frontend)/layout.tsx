@@ -34,26 +34,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="flex gap-4 justify-between">
       <h2 className="font-medium">
         <Link href="/" className="group">
           {pay.name}
         </Link>
       </h2>
+
+      <Button variant="outline" asChild>
+        <a href="https://payloadcms.com/docs">Payload Docs</a>
+      </Button>
     </nav>
   )
 }
 
 const Footer = () => {
   return (
-    <footer className="flex gap-4 justify-between">
+    <footer>
       <p>
         © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
-
-      <Button variant="outline" asChild>
-        <a href="https://payloadcms.com/docs">Payload Docs</a>
-      </Button>
     </footer>
   )
 }
