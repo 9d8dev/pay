@@ -20,7 +20,7 @@ const font = Font({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={font.className}>
-      <body className="min-h-screen">
+      <body className="min-h-screen p-6 sm:p-12">
         <main>
           {/* <Header /> */}
           {children}
