@@ -78,7 +78,7 @@ pnpm dev
    - Copy the connection string from your dashboard
    - Enable SSL mode with `?sslmode=require`
 
-### AWS S3 Configuration
+### AWS S3 Configuration ([Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html))
 
 1. Create an S3 bucket:
 
