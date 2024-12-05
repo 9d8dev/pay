@@ -19,6 +19,7 @@
     "@payloadcms/next": "latest",
     "@payloadcms/payload-cloud": "latest",
     "@payloadcms/richtext-lexical": "latest",
+    "@payloadcms/storage-s3": "^3.4.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/typography": "^0.5.15",
     "class-variance-authority": "^0.7.1",
