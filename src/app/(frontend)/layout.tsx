@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={font.className}>
       <body className="min-h-screen p-6 sm:p-12">
         <main>
-          {/* <Header /> */}
+          <Header />
           {children}
           {/* <Footer /> */}
         </main>
@@ -33,9 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <nav className="sticky top-12 z-10">
+    <nav>
       <h2 className="font-medium">
-        <Link href="/" className="group"></Link>
+        <Link href="/" className="group">
+          {pay.name}
+        </Link>
       </h2>
     </nav>
   )
@@ -45,7 +47,7 @@ const Footer = () => {
   return (
     <footer className="text-xs grid gap-1 text-zinc-400">
       <p>
-        designbooks.org / © <a href="https://github.com/brijr">brijr</a> / 2025
+        © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
     </footer>
   )
