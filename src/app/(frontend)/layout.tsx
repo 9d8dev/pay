@@ -2,14 +2,14 @@ import '../globals.css'
 
 import { Manrope as Font } from 'next/font/google'
 import type { Metadata } from 'next'
+import { pay } from 'site.config'
 
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Design Books | A Collection of Books on Design by Bridger Tower',
-  description:
-    'A collection of books on design by Bridger Tower. Discover your next favorite book on design.',
-  metadataBase: new URL('https://designbooks.org'),
+  title: pay.title,
+  description: pay.desc,
+  metadataBase: new URL(pay.url),
 }
 
 const font = Font({
