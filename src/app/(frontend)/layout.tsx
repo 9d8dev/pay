@@ -5,7 +5,9 @@ import type { Metadata } from 'next'
 import { pay } from 'site.config'
 
 import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
+import { Section, Container } from '@/components/craft'
 
 export const metadata: Metadata = {
   title: pay.title,
@@ -34,31 +36,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <nav className="flex gap-4 justify-between items-center">
-      <h2 className="font-medium">
-        <Link href="/" className="group">
-          {pay.name}
-        </Link>
-      </h2>
-
-      <div className="flex gap-2">
-        <Button variant="outline" asChild>
-          <a href="https://payloadcms.com/docs">Payload Docs</a>
-        </Button>
-        <Button asChild>
-          <a href="https://github.com/9d8dev/pay">Github</a>
-        </Button>
-      </div>
-    </nav>
+    <Section>
+      <Container>
+        <nav className="flex gap-4 justify-between items-center">
+          <h2 className="font-medium">
+            <Link href="/" className="group">
+              {pay.name}
+            </Link>
+          </h2>
+          <div className="flex gap-2">
+            <Button variant="outline" asChild>
+              <a href="https://payloadcms.com/docs">Payload Docs</a>
+            </Button>
+            <Button asChild>
+              <a href="https://github.com/9d8dev/pay">Github</a>
+            </Button>
+          </div>
+        </nav>
+      </Container>
+    </Section>
   )
 }
 
 const Footer = () => {
   return (
-    <footer className="text-muted-foreground">
-      <p>
-        © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
-      </p>
-    </footer>
+    <Section>
+      <Container>
+        <footer className="text-muted-foreground">
+          <p>
+            © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
+          </p>
+        </footer>
+      </Container>
+    </Section>
   )
 }
