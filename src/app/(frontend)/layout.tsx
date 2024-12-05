@@ -45,10 +45,16 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="flex gap-4 justify-between">
       <p>
         © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
+
+      <div>
+        <a className="underline underline-offset-2" href="https://payloadcms.com/docs">
+          Payload Docs
+        </a>
+      </div>
     </footer>
   )
 }
