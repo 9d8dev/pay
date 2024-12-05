@@ -51,10 +51,8 @@ const Footer = () => {
         © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
 
-      <Button asChild>
-        <a className="underline underline-offset-2" href="https://payloadcms.com/docs">
-          Payload Docs
-        </a>
+      <Button variant="outline" asChild>
+        <a href="https://payloadcms.com/docs">Payload Docs</a>
       </Button>
     </footer>
   )
