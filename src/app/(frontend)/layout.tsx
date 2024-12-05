@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { pay } from 'site.config'
 
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: pay.title,
@@ -50,11 +51,11 @@ const Footer = () => {
         © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
 
-      <div>
+      <Button asChild>
         <a className="underline underline-offset-2" href="https://payloadcms.com/docs">
           Payload Docs
         </a>
-      </div>
+      </Button>
     </footer>
   )
 }
