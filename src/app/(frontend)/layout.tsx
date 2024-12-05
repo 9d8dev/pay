@@ -41,9 +41,14 @@ const Header = () => {
         </Link>
       </h2>
 
-      <Button variant="outline" asChild>
-        <a href="https://payloadcms.com/docs">Payload Docs</a>
-      </Button>
+      <div className="flex gap-2">
+        <Button variant="outline" asChild>
+          <a href="https://payloadcms.com/docs">Payload Docs</a>
+        </Button>
+        <Button asChild>
+          <a href="https://github.com/9d8dev/pay">Github</a>
+        </Button>
+      </div>
     </nav>
   )
 }
