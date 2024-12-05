@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={font.className}>
       <body className="min-h-screen p-6 sm:p-12">
-        <main>
+        <main className="grid gap-12">
           <Header />
           {children}
           <Footer />
@@ -45,7 +45,7 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer className="text-xs grid gap-1 text-zinc-400">
+    <footer>
       <p>
         © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
       </p>
