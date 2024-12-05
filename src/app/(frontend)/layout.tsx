@@ -55,9 +55,9 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="text-muted-foreground">
       <p>
-        © {pay.name} / 2025 / made by <a href="https://9d8.dev">9d8</a>
+        © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
       </p>
     </footer>
   )
