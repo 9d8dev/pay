@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <nav className="flex gap-4 justify-between">
+    <nav className="flex gap-4 justify-between items-center">
       <h2 className="font-medium">
         <Link href="/" className="group">
           {pay.name}
