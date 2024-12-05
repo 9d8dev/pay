@@ -23,7 +23,7 @@ const font = Font({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={font.className}>
-      <body className="min-h-screen p-6 sm:p-12">
+      <body className="min-h-screen">
         <main>
           <Header />
           {children}
@@ -36,8 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <Section className="py-0 md:py-0">
-      <Container className="py-0 md:py-0">
+    <Section className="py-6 md:py-6">
+      <Container className="py-6 md:py-6">
         <nav className="flex gap-4 justify-between items-center">
           <h2 className="font-medium">
             <Link href="/" className="group">
@@ -60,8 +60,8 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <Section className="py-0 md:py-0">
-      <Container className="py-0 md:py-0">
+    <Section className="py-6 md:py-6">
+      <Container className="py-6 md:py-6">
         <footer className="text-muted-foreground">
           <p>
             © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
