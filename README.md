@@ -1,5 +1,7 @@
 # 9d8/pay
 
+![CleanShot 2024-12-06 at 11 29 43@2x](https://github.com/user-attachments/assets/e0f8e5b3-42af-41b1-af4d-516698f1726e)
+
 A modern, full-stack starter template powered by PayloadCMS and Next.js. Built with performance and developer experience in mind.
 
 [![Deploy](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/9d8dev/pay&project-name=pay&repository-name=pay&branch=main)
