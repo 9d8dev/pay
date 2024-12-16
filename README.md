@@ -6,6 +6,8 @@ A modern, full-stack starter template powered by PayloadCMS and Next.js. Built w
 
 [![Deploy](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/9d8dev/pay&project-name=pay&repository-name=pay&branch=main)
 
+> Need a version with user auth? Check out [pay-auth](https://github.com/9d8dev/pay-auth)
+
 ## Features
 
 - **Next.js 15** with App Router
